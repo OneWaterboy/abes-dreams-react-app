@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HeaderBar from'./components/header/HeaderBar';
 import InstagramFeed from './components/instafeed/InstagramPosts';
