@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* @font-face {
+  font-family: 'Ubuntu';
+  src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+#root {
+  background: #000000;
+  font-family: 'Ubuntu' , sans-serif;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+p.title-text {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.social-media img {
+  width: 36px;
+}
+
+img#siteLogo {
+  width: 50px;
+}
+
+div#topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid whitesmoke;
+  
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.site-title {
+  display: flex;
+  color: #FFF;
+  align-items: center;
+}
+
+.disclaimer {
+  color: #FFF;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div#instagramFeed div.single-post {
+  width: 25%;
+}
+
+.single-post img {
+  max-width: 100%;
+}
+
+p.post-desc {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+}
+
+div#instagramFeed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#instagramFeed div.single-post {
+  width: 25%;
+  margin: 40px 3%;
+}
