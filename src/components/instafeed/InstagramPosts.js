@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import DreamPopUp from './PopUps';
 
 const InstagramFeed = () => {
   const [feed, setFeed] = useState([]);
@@ -25,10 +26,8 @@ const InstagramFeed = () => {
     <div id="instagramFeed">
       {feed.map(post => (
         <div key={post.id} className="single-post">
-          <a href={post.permalink} target="_blank" rel="noopener noreferrer">
-            <img src={post.media_url} alt={post.caption} />
-          </a>
-          <p className="post-desc">{post.caption}</p>
+            <img src={post.media_url} alt="one of my dreams"/>
+            <DreamPopUp post={post} key={post.id} />
         </div>
       ))}
     </div>
