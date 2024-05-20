@@ -18,7 +18,7 @@ const DreamPopUp = ({post}) => {
         {isOpen && (
           <div className="popup">
             <div className="popup-content">
-                <img src={post.media_url} alt="one of my dreams"/>
+                <img src={post.media_url} alt="dream image"/>
                 <p className="post-desc">{post.caption}</p>
               <button onClick={closePopup}>X</button>
             </div>

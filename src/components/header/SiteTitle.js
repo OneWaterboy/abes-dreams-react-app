@@ -3,7 +3,7 @@ import SiteLogo from '../../media/expectation.png';
 function SiteTitle(){
     return (
         <div className="site-title">
-            <img id="siteLogo" src={SiteLogo} />
+            <img id="siteLogo" src={SiteLogo} alt=""/>
             <p className="title-text">Abe's Dreams</p>
         </div>
     )
