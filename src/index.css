@@ -143,3 +143,31 @@ button.open-pop-up {
   box-shadow: none;
   margin-top: 20px;
 }
+
+.main-image-container img {
+  height: 100%;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  main-image-container {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div#instagramFeed div.single-post {
+    width: 40%;
+    margin: 40px 5%;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  div#instagramFeed div.single-post {
+    width: 80%;
+    margin: 40px 10%;
+  }
+
+  .popup-content {
+    width: 80%;
+  }
+}

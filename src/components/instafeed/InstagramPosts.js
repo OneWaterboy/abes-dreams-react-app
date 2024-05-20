@@ -26,7 +26,9 @@ const InstagramFeed = () => {
     <div id="instagramFeed">
       {feed.map(post => (
         <div key={post.id} className="single-post">
-            <img src={post.media_url} alt="one of my dreams"/>
+            <div className="main-image-container">
+                <img src={post.media_url} alt="one of my dreams"/>
+            </div>
             <DreamPopUp post={post} key={post.id} />
         </div>
       ))}
