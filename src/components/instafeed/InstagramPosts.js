@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const InstagramFeed = () => {
   const [feed, setFeed] = useState([]);
   const [error, setError] = useState(null);
+  const token = process.env.INSTA_TOKEN;
 
   useEffect(() => {
     fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink&access_token=${INSTA_TOKEN}`)
@@ -14,7 +15,7 @@ const InstagramFeed = () => {
         console.error(error);
         setError(error);
       });
-  }, [INSTA_TOKEN]);
+  }, [token]);
 
   if (error) {
     return <div>Error: {error.message}</div>;
